@@ -113,16 +113,51 @@ nav {
 
 /* Additional CSS for contentcontainer */
 #contentcontainer {
-    background: url('IMG_8866_edited.jpg') no-repeat center center;
-    min-height: 100vh;
-    background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-    position: relative;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: row; /* required by you */
+  justify-content: space-between;
+  align-items: flex-start; /* <<< KEY: top-align all children */
+  min-height: 100vh;
+  background: url('IMG_8866_edited.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  color: white;
+  gap: 40px; /* optional: space between left and right parts */
+}
+
+
+.contenttext {
+    width: 100%;
+    max-width: 1000px;
+   margin-top: 5rem;
+   
+}
+#outDiv.has-results::before {
+  content: "";
+  display: block;
+  height: 15px;
+  background-color: #1f2d2b;
+  border-radius: 5px; 
+    margin-bottom: 0; 
+}
+
+#outDiv {
+  display: flex;
+  flex-direction: column;   /* <<< Stack results vertically */
+  justify-content: flex-start;
+  gap: 2rem;
+  max-width: 100%;
+  flex-grow: 1;
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
+#outDiv > .result-card:first-child {
+  margin-top: -15px;
+}
+#contentcontainer:has(#outDiv:empty) {
+    justify-content: center;
 }
 
 #sociallinks::before {
@@ -144,16 +179,17 @@ nav {
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
-    padding-top: 0px;
+    padding-top: 80px;
 }
 
 #content {
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-left: 80px;
-    
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-shrink: 0;  /* prevents shrinking when results grow */
+  margin-left: 80px;
+  gap:3rem;
 }
 
 #maintext {
@@ -440,27 +476,19 @@ nav {
 
 
 /* Optional: adjust for layout */
-#outDiv::before{
-    content: "";
-    display: block;
-    height: 20px;
-    background-color: #1f2d2b;
-    border-radius: 5px;
-    margin-top: 1rem;
-    
-}
+
 
 .result-card {
+    width: 100%;
   display: flex;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.95);
   overflow: hidden;
-  margin: 1rem 0 2rem 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  max-width: 400px; /* Optional: adjust for layout */
+  max-width: 600px; /* Optional: adjust for layout */
   color: #333;
   text-align: left;
-  
+    
 }
 
 
