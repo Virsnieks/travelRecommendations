@@ -1,0 +1,502 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background: linear-gradient(to right, #1f2d2b, #132221);
+    padding: 10px 20px;
+    color: white;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first ul,
+#middle ul,
+#last ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.first ul li,
+#middle ul li,
+#last ul li {
+    margin: 0 10px;
+}
+
+#logo {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.first a {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+#middle a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+#middle a:hover {
+    text-decoration: underline;
+}
+
+#last {
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    padding: 4px 8px;
+}
+
+.search-container input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    width: 220px;
+    color: #004d4d;
+    margin-right: 6px;
+}
+
+.search-container button {
+    background-color: #007272;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-container button:hover {
+    background-color: #009999;
+}
+
+
+
+.search-container .icon {
+    margin-left: 0;
+    margin-right: 6px;
+    color: #007272;
+    font-size: 1.2rem;
+}
+
+/* Content section */
+
+
+/* Additional CSS for contentcontainer */
+#contentcontainer {
+    background: url('IMG_8866_edited.jpg') no-repeat center center;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#sociallinks::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 200px;
+    background-color: white;
+    margin-bottom: 20px;
+    margin-left: 8px;
+}
+
+#sociallinks {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    padding-top: 0px;
+}
+
+#content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 80px;
+    
+}
+
+#maintext {
+    
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+
+
+#secondtext {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    border-radius: 8px;
+    max-width: 400px;
+    align-self: flex-start;
+    
+}
+
+
+
+#content button {
+    background-color: #007272;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+#content button:hover {
+    background-color: #009999;
+}
+
+/* Contact Container Styling */
+#contactcontainer {
+    
+    display: flex;
+    min-height: 70vh;
+    background-image: url('IMG_8866_edited.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 40px;
+    gap: 40px;
+}
+
+#contacttext {
+  display: flex;
+  justify-content: flex-start; /* align items left horizontally */
+  align-items: center;         /* vertically center both parts */
+  gap: 40px;
+  margin-left: 50px;                   /* spacing between text column and form */
+}
+
+#textcolumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* center the two texts horizontally */
+  gap: 50px;    /* spacing between maintext and secondtext */
+  min-width: 250px; /* ensure enough width for text */
+}
+
+
+
+#maintext {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    }
+
+
+
+#formdiv {
+    
+    background-color:transparent;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    margin-left: 200px;
+    width: 500px;
+    
+   
+}
+
+#contactForm div {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contactForm label {
+    margin-bottom: 5px;
+    color: white;
+    font-weight: 500;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 10px;
+    background-color: transparent;
+    border:solid 0.5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #6e6f6f;
+    
+}
+
+#contactForm button {
+   width: 100% ;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007272;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    
+}
+
+#contactForm button:hover {
+    background-color: #009999;
+}
+
+
+/* ABOUT PAGE STYLING */
+
+#contactcontainer {
+    display: flex;
+    background-image: url('IMG_8866_edited.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 40px;
+    min-height: 80vh;
+    position: relative;
+    gap: 40px;
+}
+
+
+
+
+/* Main About Section Layout */
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+/* Text Column Styling */
+
+#abouttext {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.05);
+    
+}
+#textcolumn {
+    display: flex;
+    flex-direction: column;
+   align-items: flex-start;
+     margin-left: 150px;
+     
+    
+    
+   
+}
+
+#aboutheader {
+    
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+#abouttext p {
+    font-size: 1rem;
+    color: #f2f2f2;
+    margin-bottom: 15px;
+}
+
+#abouttext span#span {
+
+    font-weight: bold;
+}
+
+/* Team Section */
+#team-container {
+    margin:40px 0px 0px 140px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    max-width: 100%;;
+}
+
+#teamp {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Ensure all team members appear in a single row */
+.teamlistcontainer {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* allow scrolling if needed on smaller screens */
+    padding-bottom: 10px;
+    padding-left: 50px;
+}
+
+/* Style for each team member */
+.team {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    min-width: 250px; /* so each block has enough width */
+    flex-shrink: 0; /* prevent shrinking in scroll container */
+}
+
+
+/* Team image */
+#teamimg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ccc;
+    
+}
+
+/* Team info in column layout */
+.teaminfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+   
+}
+
+/* Team name */
+
+
+#teamab{
+    margin: 0;
+    font-size: 0.7rem;
+    color: #f2f2f2;
+}
+
+/* Button style */
+#teambtn {
+    align-self: center;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-weight: 400;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#teambtn:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Optional: adjust for layout */
+#outDiv::before{
+    content: "";
+    display: block;
+    height: 20px;
+    background-color: #1f2d2b;
+    border-radius: 5px;
+    margin-top: 1rem;
+    
+}
+
+.result-card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.95);
+  overflow: hidden;
+  margin: 1rem 0 2rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Optional: adjust for layout */
+  color: #333;
+  text-align: left;
+  
+}
+
+
+
+.result-card img {
+  width: 100%;
+  height: 250px; /* Adjust as needed */
+  object-fit: cover;
+}
+
+.result-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.result-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.result-content p {
+  font-size: 0.95rem;
+  color: #333;
+}
+#btn {
+    background-color: #007272;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin:  0 1rem 1rem;
+    max-width: 50px;
+    
+}

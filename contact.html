@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Travel All Agency</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<nav>
+    <div id="container">
+        <div class="first">
+            <ul>
+                <li><img id="logo" src='koge9609.jpg'></li>
+                <li><a href="travel_recommendation.html">TravelAll</a></li>
+            </ul>
+        </div>
+        <div id="middle">
+            <ul>
+                <li><a href="travel_recommendation.html" id="home">Home </a></li>
+                <li><a href="about.html" id="about">About Us</a></li>
+                <li><a href="contact.html" id="contact">Contact Us</a></li>
+             </ul>
+        </div>
+        <div class="">
+        
+    </div>
+
+    </div>
+</nav>
+
+   <div id="contactcontainer">
+        
+
+   
+   <div id="sociallinks">
+        <i id="link" class="fa-brands fa-twitter" style="color: #fbfaf9;"></i>
+        <i id="link" class="fa-brands fa-facebook-f" style="color: #fbfaf9;"></i>
+        <i id="link" class="fa-brands fa-instagram" style="color: #fbfaf9;"></i>
+        <i id="link" class="fa-brands fa-youtube" style="color: #fbfaf9;"></i></div>
+   <div id="contacttext">
+                <div id="textcolumn">
+                        <div id="maintext">Contact Us</div>
+                        <div id="secondtext">Get in touch</div>
+                </div>
+                <div id="formdiv"> 
+                    <form id="contactForm">
+                        <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" value="Enter your name here" required>
+                        </div>
+                        <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="Enter your e-mail here" required>
+                        </div>
+                        <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required>Enter your message here</textarea>
+                
+                        <button type="submit" onclick="thankyou()">Submit</button>
+                    </form>
+        </div>
+    </div>
+  <script>
+    function thankyou(){
+        alert('Thank you for contacting us!')
+    }
+  </script>
+   </div>
+
+</div>
+
+
+
+ <script src="travel_recommendation.js"></script>   
+</body>
+</html>
